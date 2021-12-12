@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp3.EmployeeInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="EmployeeInfo" Height="617.717" Width="1084.645">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="511" Margin="301,33,0,0" VerticalAlignment="Top" Width="738" SelectionChanged="DataGrid_SelectionChanged"/>
+        <Grid Margin="75,183,862,177">
+            <Button Content="Изменить" HorizontalAlignment="Left" Margin="0,87,0,0" VerticalAlignment="Top" Width="140" Height="49" Click="Button_Change"/>
+            <Button Content="Добавить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="49" Click="Button_Add"/>
+            <Button Content="Удалить" HorizontalAlignment="Left" Margin="0,178,0,0" VerticalAlignment="Top" Width="140" Height="49" Click="Button_Delete"/>
+            <Button Content="Назад" HorizontalAlignment="Left" Margin="-35,304,-33,-133" VerticalAlignment="Top" Width="208" Height="56" Click="Button_Back"/>
+
+        </Grid>
+        <Label Content="Администрирование &#xA;  учетных записей" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Height="109" Width="267" FontSize="26" />
+
+    </Grid>
+</Window>
