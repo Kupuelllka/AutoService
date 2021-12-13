@@ -46,7 +46,9 @@ namespace WpfApp3
 
         private void empoyeebutton_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Hide();
+            EmployeeInfo employee = new EmployeeInfo();
+            employee.ShowDialog();
         }
     }
 }

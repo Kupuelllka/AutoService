@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp3.EmployeeAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="EmployeeAdd" Height="450" Width="359.73">
+    <Grid>
+        <Label x:Name="label" Content="Логин" HorizontalAlignment="Left" Margin="88,113,0,0" VerticalAlignment="Top" Height="26" Width="64"/>
+        <Label x:Name="label_Copy" Content="Пароль" HorizontalAlignment="Left" Margin="88,159,0,0" VerticalAlignment="Top" Height="26" Width="64"/>
+        <Label x:Name="label_Copy1" Content="Повторите пароль" HorizontalAlignment="Left" Margin="39,205,0,0" VerticalAlignment="Top" Height="26" Width="113"/>
+        <Label x:Name="label_Copy2" Content="ФИО" HorizontalAlignment="Left" Margin="88,71,0,0" VerticalAlignment="Top" Height="26" Width="64"/>
+        <Label x:Name="label_Copy3" Content="Опыт работы, если есть" HorizontalAlignment="Left" Margin="10,248,0,0" VerticalAlignment="Top" Height="26" Width="142"/>
+        <Label x:Name="label_Copy4" Content="    Добавление сотрудника" HorizontalAlignment="Left" Margin="31,10,0,0" VerticalAlignment="Top" Height="39" Width="289" FontSize="20"/>
+        <TextBox x:Name="textBox_Fio" HorizontalAlignment="Left" Height="23" Margin="167,71,0,0" TextWrapping="Wrap" Text="Введите ФИО" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="textBox_Login" HorizontalAlignment="Left" Height="23" Margin="167,116,0,0" TextWrapping="Wrap" Text="Введите логин" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="textBox_Password" HorizontalAlignment="Left" Height="23" Margin="167,162,0,0" TextWrapping="Wrap" Text="Введите пароль" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="textBox_Password2" HorizontalAlignment="Left" Height="23" Margin="167,208,0,0" TextWrapping="Wrap" Text="Повторите пароль" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_Experience" HorizontalAlignment="Left" Height="23" Margin="167,248,0,0" TextWrapping="Wrap" Text="Опыт " VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button_Add" Content="Добавить" HorizontalAlignment="Left" Margin="64,338,0,0" VerticalAlignment="Top" Width="97" Click="button_Add_Click"/>
+        <Button x:Name="button_Cancel" Content="Отмена" HorizontalAlignment="Left" Margin="201,338,0,0" VerticalAlignment="Top" Width="96" Click="button_Cancel_Click"/>
+
+    </Grid>
+</Window>

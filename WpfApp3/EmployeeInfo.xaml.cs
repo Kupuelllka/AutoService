@@ -39,7 +39,8 @@ namespace WpfApp3
         }
         private void Button_Add(object sender, RoutedEventArgs e)
         {
-
+            EmployeeAdd employee = new EmployeeAdd();
+            employee.ShowDialog();
         }
 
         private void Button_Change(object sender, RoutedEventArgs e)
@@ -50,7 +51,7 @@ namespace WpfApp3
         private void Button_Delete(object sender, RoutedEventArgs e)
         {
             Employee employee = new Employee();
-            employee.Id = dataGrid.SelectedIndex;
+            employee.Id = dataGrid.SelectedIndex+1;
             db.Employees.Attach(employee);
             db.Employees.Remove(employee);
 
